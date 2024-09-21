@@ -1,39 +1,191 @@
-<html >
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style1.css">
-    <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
-    <title>Skills</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Skills</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .skills-container {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 1000px;
+        }
+        .skill-head {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .skill-head h2 {
+            color:rgb(115, 147, 179);
+            font-size: 24px;
+        }
+        .skill-head i {
+            font-size: 28px;
+            color:rgb(115, 147, 179);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th {
+            background-color:rgb(115, 147, 179);
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-size: 18px;
+        }
+        td {
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color:#e0f7ff;
+            transition: background-color 0.3s;
+        }
+        .rating-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .stars {
+            display: inline-block;
+            color:rgb(115, 147, 179);
+        }
+        .stars i {
+            font-size: 14px;
+        }
+        .icon {
+            color: #333;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-    <div class= "skills">
-        <div class="skill-head blue">
+    <div class="skills-container">
+        <div class="skill-head">
             <i class="fas fa-tools"></i>
-            <h2> Additional Skills</h2>
+            <h2>Additional Skills</h2>
         </div>
-            <table>
-                <tr>
-                  <th>Other Skills</th>
-                </tr>
-                <tr>
-                  <td>Willingness to learn</td>
-                </tr>
-                <tr>
-                  <td>Attentive</td>
-                </tr>
-                <tr>
-                    <td>Hardworking</td>
-                  </tr>
-                  <tr>
-                    <td>Organized</td>
-                  </tr>
-                  <tr>
-                    <td>Effective communicator</td>
-                  </tr>
-                  <tr>
-                    <td>On-time</td>
-                  </tr>
-              </table>
-        </div>
+        <table>
+            <tr>
+                <th>Other Skills</th>
+            </tr>
+            <tr>
+                <td>Willingness to Learn</td>
+                <td>
+                    <div class="rating-container">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="icon">5/5</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Attentive</td>
+                <td>
+                    <div class="rating-container">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="icon">4.5/5</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Hardworking</td>
+                <td>
+                    <div class="rating-container">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="icon">4.5/5</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Organized</td>
+                <td>
+                    <div class="rating-container">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="icon">4/5</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Effective Communicator</td>
+                <td>
+                    <div class="rating-container">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="icon">4.5/5</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>On-Time</td>
+                <td>
+                    <div class="rating-container">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="icon">5/5</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
