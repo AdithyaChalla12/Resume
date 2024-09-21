@@ -1,41 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+        .Projects {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .blue.experience {
+            display: flex;
+            align-items: center;
+            background-color: rgb(115, 147, 179);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .blue.experience i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        h3 {
+            margin: 10px 0;
+            color: rgb(115, 147, 179);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0 15px 0;
+            line-height: 1.5;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(115, 147, 179);
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #8aa2c5; /* Lighter shade on hover */
+        }
+    </style>
     <title>Academic Projects</title>
 </head>
-<body>
-    <body oncontextmenu="return false;">
-        <link rel="stylesheet" href="style1.css">
-        <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
-        <div class="Projects">
-            <div class=" blue experience">
-                <i class="fa-solid fa-certificate"></i>
-                 <h2>Projects</h2>
-               </div>
-            <ul>
+<body oncontextmenu="return false;">
 
-                <a href="https://github.com/AdithyaChalla12/T20-World-Cup-Analysis" target="_blank"><h3>Men's T20 World Cup Data Analysis Project</h3></a>
-                  <li>Performed data cleaning and transformation on the Men's T20 World Cup dataset using Excel's Power Query Editor, ensuring
-                    data accuracy and quality.</li>
-               <li>
-                Created new measures and utilized pivot tables to analyze key metrics and trends in the T20 World Cup.
-               </li> 
-               <li>Designed visualizations to represent data insights, enhancing the clarity and impact of the final report</li>
-               <li>Worked on visualization and exploratory data analysis (EDA) using Python, employing libraries like Matplotlib and Seaborn to
-                uncover patterns and trends in the Men's T20 World Cup dataset.</li>
-                <br><br>
-                <a href="https://github.com/AdithyaChalla12/Network-Intrusion-Detection-System" target="_blank"><h3>Hybrid Intrusion Detection System</h3></a>
-                <li>Applied a correlation-based feature selection algorithm and various machine learning techniques to enhance accuracy in
-                    identifying potential attack classes within the dataset.</li>
-                <li>Concurrently trained and evaluated the performance of Convolutional Neural Network (CNN) and Recurrent Neural Network
-                    (RNN) models.</li>
-                <li>Identified the best-performing classifiers, which were then integrated into the Hybrid IDS to maximize detection accuracy across diverse attack scenarios.</li>
-                <br><br>
-                <a href="https://github.com/AdithyaChalla12/Mini_Project_RubixcubeSolver" target="_blank"><h3>Rubix's Cube Solver</h3></a>
-                <li>Developed a Rubik’s Cube solver using Python and OpenCV to detect and solve scrambled cube configurations.</li>
-                <li>Worked on extracting cube colors using a camera feed and convert BGR to HSV for accurate color detection in various environments.</li>
-                <li>Implemented Kociemba’s algorithm to compute the optimal solution and return a set of moves for solving the cube.</li>
-                <li>Tried ensuring the system works efficiently in different lighting conditions and backgrounds for robust performance.</li>
-            </ul>
+    <div class="Projects">
+        <div class="blue experience">
+            <i class="fa-solid fa-certificate"></i>
+            <h2>Projects</h2>
         </div>
+        <ul>
+            <li>
+                <a href="https://github.com/AdithyaChalla12/T20-World-Cup-Analysis" target="_blank"><h3>Men's T20 World Cup Data Analysis Project</h3></a>
+                <ul>
+                    <li>Performed data cleaning and transformation on the Men's T20 World Cup dataset using Excel's Power Query Editor, ensuring data accuracy and quality.</li>
+                    <li>Created new measures and utilized pivot tables to analyze key metrics and trends in the T20 World Cup.</li>
+                    <li>Designed visualizations to represent data insights, enhancing the clarity and impact of the final report.</li>
+                    <li>Worked on visualization and exploratory data analysis (EDA) using Python, employing libraries like Matplotlib and Seaborn to uncover patterns and trends in the dataset.</li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="https://github.com/AdithyaChalla12/Network-Intrusion-Detection-System" target="_blank"><h3>Hybrid Intrusion Detection System</h3></a>
+                <ul>
+                    <li>Applied a correlation-based feature selection algorithm and various machine learning techniques to enhance accuracy in identifying potential attack classes.</li>
+                    <li>Concurrently trained and evaluated the performance of Convolutional Neural Network (CNN) and Recurrent Neural Network (RNN) models.</li>
+                    <li>Identified the best-performing classifiers, which were integrated into the Hybrid IDS to maximize detection accuracy across diverse attack scenarios.</li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="https://github.com/AdithyaChalla12/Mini_Project_RubixcubeSolver" target="_blank"><h3>Rubik's Cube Solver</h3></a>
+                <ul>
+                    <li>Developed a Rubik’s Cube solver using Python and OpenCV to detect and solve scrambled cube configurations.</li>
+                    <li>Worked on extracting cube colors using a camera feed and converting BGR to HSV for accurate color detection in various environments.</li>
+                    <li>Implemented Kociemba’s algorithm to compute the optimal solution and return a set of moves for solving the cube.</li>
+                    <li>Ensured the system works efficiently in different lighting conditions and backgrounds for robust performance.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
 </body>
 </html>
