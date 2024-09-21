@@ -1,50 +1,149 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Btech</title>
-    <link rel="stylesheet" href="style1.css">
-    <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education and Activities</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: rgb(115, 147, 179);
+            font-size: 24px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid rgb(115, 147, 179);
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 20px;
+            color: #2c3e50;
+        }
+        i {
+            color: rgb(115, 147, 179);
+        }
+        table {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: rgb(115, 147, 179);
+            color: #fff;
+            font-size: 16px;
+        }
+        td {
+            font-size: 14px;
+            color: #555;
+        }
+        .activities {
+            margin-top: 30px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .fa-calendar {
+            margin-right: 5px;
+            color: #7f8c8d;
+        }
+        .activity {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            transition: box-shadow 0.3s ease;
+        }
+        .activity:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .date {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <table>
-        <tr>
-          <th>Degree</th>
-          <th>Institution</th>
-          <th>Year of Passing</th>
-          <th>Grade</th>
-        </tr>
-        <tr>
-          <td>Computer Science(Data Science)</td>
-          <td>University of Southern California</td>
-          <td> 2026</td>
-          <td>Currently pursuing</td>
-      </tr>
-        <tr>
-          <td>Computer Science</td>
-          <td>GITAM University</td>
-          <td> 2023</td>
-          <td>9.15 CGPA</td>
-      </tr>
-      </table>
- <h2>Activities</h2>
- <ul>
-  <li><h3>Microsoft Learn Student Abassador| Hyderabad, Telangana</h3>
-      <i class="fa-regular fa-calendar"> 12/2022 – 04/2023</i>
-    <p>
-    Worked on Microsoft Azure services, including using Microsoft Copilot and explored use cases for integrating it to enhance productivity with various tools.
-    Produced research and analysis on emerging technologies.
-    Conducted webinars to share insights and understanding of emerging technologies with peers.
-      </p>
-  </li>
-  <li><h3>Innovation Center GITAM | Hyderabad, Telangana|Chief Financial Officer(CFO)</h3>
-    <i class="fa-regular fa-calendar"> 06/2019 – 06/2022</i>
-  <p> I began as a Public Relations Officer, promoting technical events on campus as a Public Relations Officer, increasing participation by 30%.
-    Managed finance and inventory, ensuring accurate budgeting and cost control. 
-    Developed financial reports and conducted market analysis to support strategic planning.
-    As part of the team expansion, we conducted our student
-    recruitment.This experience has aided in the development of my confidence and leadership abilities. It also taught me
-    how to work and collaborate with my team online and be a good team lead.</p>
-</li>
- </ul>
- 
+    <div class="container">
+        <!-- Education Section -->
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year of Passing</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Computer Science (Data Science)</td>
+                <td>University of Southern California</td>
+                <td>2026</td>
+                <td>Currently pursuing</td>
+            </tr>
+            <tr>
+                <td>Computer Science</td>
+                <td>GITAM University</td>
+                <td>2023</td>
+                <td>9.15 CGPA</td>
+            </tr>
+        </table>
+
+    
+        <div class="activities">
+            <h2><i class="fas fa-tasks"></i> Activities</h2>
+            <ul>
+              
+                <li class="activity">
+                    <h3>Microsoft Learn Student Ambassador | Hyderabad, Telangana</h3>
+                    <span class="date"><i class="fa-regular fa-calendar"></i> 12/2022 – 04/2023</span>
+                    <p>
+                        Worked on Microsoft Azure services, including using Microsoft Copilot and explored use cases for integrating it to enhance productivity with various tools. 
+                        Produced research and analysis on emerging technologies. Conducted webinars to share insights and understanding of emerging technologies with peers.
+                    </p>
+                </li>
+
+      
+                <li class="activity">
+                    <h3>Innovation Center GITAM | Hyderabad, Telangana | Chief Financial Officer (CFO)</h3>
+                    <span class="date"><i class="fa-regular fa-calendar"></i> 06/2019 – 06/2022</span>
+                    <p>
+                        Started as a Public Relations Officer, promoting technical events on campus and increasing participation by 30%. Managed finances and inventory, ensuring accurate budgeting and cost control. Developed financial reports and conducted market analysis to support strategic planning. Led student recruitment, building confidence and leadership skills, while learning how to collaborate effectively with the team online.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

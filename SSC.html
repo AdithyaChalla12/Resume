@@ -1,77 +1,155 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>SSC</title>
-    <link rel="stylesheet" href="style1.css">
-    <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC Education and Achievements</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f0f4f8;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 26px;
+            color: rgb(115, 147, 179); /* Primary color */
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgb(115, 147, 179); /* Primary color */
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: rgb(115, 147, 179); /* Primary color */
+            color: #fff;
+            font-size: 16px;
+        }
+        td {
+            font-size: 14px;
+            color: #555;
+        }
+        a {
+            color: rgb(115, 147, 179); /* Primary color */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .fa-graduation-cap, .fa-award {
+            color: rgb(115, 147, 179); /* Primary color */
+            margin-right: 10px;
+        }
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .table-wrapper {
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
-<body oncontextmenu="return false;">
-    <table>
-        <tr>
-          <th>Board</th>
-          <th>Institution</th>
-          <th>Year of Passing</th>
-          <th>Grade</th>
-        </tr>
-        <tr>
-          <td>Intermediate</td>
-          <td>Sri Chaitanya Junior College</td>
-          <td> 2017-2019</td>
-          <td>93.9%</td>
-      </tr>
-        <tr>
-          <td>SSC</td>
-          <td>Bhashyam High School</td>
-          <td> 2014-2017</td>
-          <td>9.8 CGPA</td>
-      </tr>
-      <tr>
-          <td>Elementary School</td>
-          <td>Gowtham Model School</td>
-          <td> 2009-2012</td>
-          <td> 96%</td>
-      </tr>
-      </table>
-     <h2>Achievements</h2>
-     <table>
-      <tr>
-        <th>Board/Institution</th>
-        <th>Description</th>
-        <th>Year</th>
-        <th>Certificate</th>
-      </tr>
-      <tr>
-        <td> Bhashyam High School</td>
-        <td>
-          <p>I have received certificate of participation in National Standard Examination Junior Science (NSEJS) held Indian Association of Physics Teachers for being among the top 10% of students in my institution.</p>
-        </td>
-        <td>2016</td>
-        <td> <a href ="achievements4.html" target="right" style="color:black;text-decoration: none;">Certificate of Merit</a></td>
-      </tr>
-      <tr>
-        <td> Bhashyam High School</td>
-        <td>
-          <p>I have received certificate of participation in  48th Association of Maths Teachers of India (AMTI) for being the top 10% scorer in  Junior level of my institution</p>
-        </td>
-        <td>2016</td>
-        <td> <a href ="achievements3.html" target="right" style="color:black;text-decoration: none;">Certificate of Merit</a></td>
-      </tr>
-      <tr>
-        <td> Bhashyam High School</td>
-        <td>
-          <p>I have received certificate of participation in  46th Association of Maths Teachers of India (AMTI) for being the top 10% scorer in  Sub-Junior level of my institution</p>
-        </td>
-        <td>2014</td>
-        <td> <a href ="achievements2.html" target="right" style="color:black;text-decoration: none;">Certificate of Merit</a></td>
-      </tr>
-      <tr>
-        <td> Bhashyam High School</td>
-        <td>
-          <p>I have received the Certificate of Merit in 24th Ramanujan Mathematics Talent Search Competition for securing first rank in district level.</p>
-        </td>
-        <td>2013</td>
-        <td> <a href ="achievements1.html" target="right" style="color:black;text-decoration: none;">Certificate of Merit</a></td>
-      </tr>
-     </table>
+<body>
+
+<div class="container">
+    <!-- Education Section -->
+    <div class="table-wrapper">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <table>
+            <tr>
+                <th>Board</th>
+                <th>Institution</th>
+                <th>Year of Passing</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Intermediate</td>
+                <td>Sri Chaitanya Junior College</td>
+                <td>2017-2019</td>
+                <td>93.9%</td>
+            </tr>
+            <tr>
+                <td>SSC</td>
+                <td>Bhashyam High School</td>
+                <td>2014-2017</td>
+                <td>9.8 CGPA</td>
+            </tr>
+            <tr>
+                <td>Elementary School</td>
+                <td>Gowtham Model School</td>
+                <td>2009-2012</td>
+                <td>96%</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Achievements Section -->
+    <div class="table-wrapper">
+        <h2><i class="fas fa-award"></i> Achievements</h2>
+        <table>
+            <tr>
+                <th>Board/Institution</th>
+                <th>Description</th>
+                <th>Year</th>
+                <th>Certificate</th>
+            </tr>
+            <tr>
+                <td>Bhashyam High School</td>
+                <td>
+                    <p>Received participation certificate in National Standard Examination Junior Science (NSEJS) by the Indian Association of Physics Teachers for ranking in the top 10% in the institution.</p>
+                </td>
+                <td>2016</td>
+                <td><a href="achievements4.html" target="_blank">Certificate of Merit</a></td>
+            </tr>
+            <tr>
+                <td>Bhashyam High School</td>
+                <td>
+                    <p>Received participation certificate in the 48th Association of Maths Teachers of India (AMTI) for being in the top 10% scorers at the Junior level.</p>
+                </td>
+                <td>2016</td>
+                <td><a href="achievements3.html" target="_blank">Certificate of Merit</a></td>
+            </tr>
+            <tr>
+                <td>Bhashyam High School</td>
+                <td>
+                    <p>Received participation certificate in the 46th AMTI for being in the top 10% scorers at the Sub-Junior level.</p>
+                </td>
+                <td>2014</td>
+                <td><a href="achievements2.html" target="_blank">Certificate of Merit</a></td>
+            </tr>
+            <tr>
+                <td>Bhashyam High School</td>
+                <td>
+                    <p>Received Certificate of Merit in the 24th Ramanujan Mathematics Talent Search Competition for securing first place at the district level.</p>
+                </td>
+                <td>2013</td>
+                <td><a href="achievements1.html" target="_blank">Certificate of Merit</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
 
 </body>
 </html>

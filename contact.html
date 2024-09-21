@@ -1,25 +1,79 @@
-<html>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
-    <body>
+    <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Languages Known</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+        .language {
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .lang {
+            display: flex;
+            align-items: center;
+            background-color: rgb(115, 147, 179);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .lang i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .w3-light-grey {
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .w3-container {
+            height: 25px; /* Height for the progress bars */
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+
+    <div class="language">
+        <div class="lang">
+            <i class="fa-solid fa-certificate"></i>
+            <h2>Languages</h2>
+        </div>
+        <div>
+            <p>English</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-green" style="width:85%"></div>
+            </div>
+            <p>Hindi</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-red" style="width:75%"></div>
+            </div>
+            <p>Telugu</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-blue" style="width:90%"></div>
+            </div>
+        </div>
     </div>
-    <div class="header-right">
-    <div class="email">
-      <p>adithyachalla12@gmail.com</p>
-      <i class="fa fa-envelope"></i>
-    </div>
-    <div class="linkedin">
-        <a href="www.linkedin.com/in/adithya-challa1206" target="_blank">Linkedin</a>
-        <i class=" fa fa-linkedin-square"></i>
-      </div>
-      <div class="github">
-        <a href="https://github.com/AdithyaChalla12" target="_blank">Github</a>
-        <i class=" fa fa-github"></i>
-      </div>
-      <div class="phone">
-      <p>+1 (213) 477-9905</p>
-      <i class="fa fa-phone"></i>
-    </div>
-    </body>
-</div>
+
+</body>
 </html>
