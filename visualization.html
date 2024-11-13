@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 28px;
+            color: rgb(115, 147, 179);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .Projects {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 350px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px 15px 15px 15px; /* Increased padding for better spacing */
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card h3 {
+            color: rgb(115, 147, 179);
+            font-size: 20px;
+            margin-bottom: 10px; /* Reduced margin to close the gap */
+        }
+        .card p {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+        a.card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+    <title>Academic Projects</title>
+</head>
+<body oncontextmenu="return false;">
+
+    <!-- Header -->
+    <h1>Data Visualization Projects</h1>
+
+    <div class="Projects">
+        <!-- Card 1: T20 World Cup Data Analysis -->
+        <a href="https://github.com/AdithyaChalla12/T20-World-Cup-Analysis" target="_blank" class="card-link">
+            <div class="card">
+                <img src="images/T2o World Cup.png" alt="T20 World Cup Analysis">
+                <div class="card-content">
+                    <h3>Men's T20 World Cup Data Analysis Project</h3>
+                    <p>Data cleaning and transformation using Excel and Power Query. Created visualizations using Python libraries to uncover trends in the T20 World Cup.</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Card 2: Prime Video Analysis -->
+        <a href="https://github.com/AdithyaChalla12/Prime-Video-Analysis" target="_blank" class="card-link">
+            <div class="card">
+                <img src="images/Prime Video Analysis.png" alt="Prime Video Analysis">
+                <div class="card-content">
+                    <h3>Amazon Prime Video Visualization</h3>
+                    <p>In this project, I performed an in-depth analysis of Prime Video's content library to understand viewer preferences.</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Card 3: Paris Olympic Games -->
+        <a href="https://github.com/AdithyaChalla12/Paris-OlympicsnDashboard" target="_blank" class="card-link">
+            <div class="card">
+                <img src="images/Olympic Games.png" alt="Paris Olympic Games">
+                <div class="card-content">
+                    <h3>Paris Olympic Games Visualization</h3>
+                    <p>Developed new measures to calculate the total number of athletes and medals in the Paris Olympic Games dataset. Created a dynamic dashboard to visualize these metrics.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>
