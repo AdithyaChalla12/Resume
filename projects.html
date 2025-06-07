@@ -1,107 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
-    <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
-            margin: 0;
-            padding: 20px;
-        }
-        .Projects {
-            max-width: 800px;
-            margin: auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .blue.experience {
-            display: flex;
-            align-items: center;
-            background-color: rgb(115, 147, 179);
-            color: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .blue.experience i {
-            font-size: 24px;
-            margin-right: 10px;
-        }
-        h2 {
-            margin: 0;
-            font-size: 24px;
-        }
-        h3 {
-            margin: 10px 0;
-            color: rgb(115, 147, 179);
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 5px 0 15px 0;
-            line-height: 1.5;
-        }
-        a {
-            text-decoration: none;
-            color: rgb(115, 147, 179);
-            transition: color 0.3s;
-        }
-        a:hover {
-            color: #8aa2c5; /* Lighter shade on hover */
-        }
-    </style>
-    <title>Academic Projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adithya Challa | Projects Portfolio</title>
+  <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .projects-container {
+      max-width: 1100px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: left;
+      font-size: 22px;
+      color: #333;
+      border-bottom: 3px solid #5a5a5a;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-card {
+      width: 300px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 15px;
+    }
+
+    .project-info h3 {
+      margin: 0;
+      color: rgb(115, 147, 179);
+      font-size: 18px;
+    }
+
+    .project-info p {
+      font-size: 14px;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    @media (max-width: 600px) {
+      .project-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body oncontextmenu="return false;">
+  <div class="projects-container">
 
-    <div class="Projects">
-        <div class="blue experience">
-            <i class="fa-solid fa-certificate"></i>
-            <h2>Projects</h2>
+    <!-- Machine Learning Projects -->
+    <h2>🔹 Machine Learning Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" role="button" tabindex="0" onclick="window.open('https://github.com/AdithyaChalla12/Network-Intrusion-Detection-System', '_blank')">
+        <img src="./images/intrusion.png" alt="Hybrid Intrusion Detection System" />
+        <div class="project-info">
+          <h3>Hybrid Intrusion Detection System</h3>
+          <p>Applied ML techniques to detect cyber threats efficiently.</p>
         </div>
-        <ul>
-             <li>
-                <h3>Credit Card Fraud Detection</h3>
-                <ul>
-                    <li>Analyzed and preprocessed the credit card fraud dataset, removing redundant columns and addressing class imbalance using SMOTE.</li>
-                    <li>Predicted fraudulent vs non-fraudulent transactions using various ML models, achieving 95% accuracy with Random Forest.</li>
-                </ul>
-            <li>
-            <li>
-                <h3>Text Prediction using DL</h3>
-                <ul>
-                    <li>Implemented LSTM-based text prediction using TensorFlow and Keras.</li>
-                    <li>Trained the model using categorical crossentropy loss and optimized with Adam optimizer.</li>
-                    <li>Processed and tokenized textual data for sequence modeling.</li>
-                </ul>
-            <li>
-                <a href="https://github.com/AdithyaChalla12/Network-Intrusion-Detection-System" target="_blank"><h3>Hybrid Intrusion Detection System</h3></a>
-                <ul>
-                    <li>Applied a correlation-based feature selection algorithm and various machine learning techniques to enhance accuracy in identifying potential attack classes.</li>
-                    <li>Concurrently trained and evaluated the performance of Recurrent Neural Network (RNN) model and anlyzed with the ML classifiers.</li>
-                    <li>Identified the best-performing classifiers, which were integrated into the Hybrid IDS to maximize detection accuracy across diverse attack scenarios.</li>
-                </ul>
-            </li>
+      </div>
 
-            <li>
-                <a href="https://github.com/AdithyaChalla12/Mini_Project_RubixcubeSolver" target="_blank"><h3>Rubik's Cube Solver</h3></a>
-                <ul>
-                    <li>Developed a Rubik’s Cube solver using Python and OpenCV to detect and solve scrambled cube configurations.</li>
-                    <li>Worked on extracting cube colors using a camera feed and converting BGR to HSV for accurate color detection in various environments.</li>
-                    <li>Implemented Kociemba’s algorithm to compute the optimal solution and return a set of moves for solving the cube.</li>
-                    <li>Ensured the system works efficiently in different lighting conditions and backgrounds for robust performance.</li>
-                </ul>
-            </li>
-        </ul>
+      <div class="project-card" role="button" tabindex="0" onclick="window.open('https://github.com/AdithyaChalla12/Text-Prediction', '_blank')">
+        <img src="./images/predict.png" alt="Text Prediction with LSTM" />
+        <div class="project-info">
+          <h3>Text Prediction</h3>
+          <p>Implemented LSTM architecture for accurate text prediction.</p>
+        </div>
+      </div>
+
+      <div class="project-card" role="button" tabindex="0" onclick="window.open('https://github.com/AdithyaChalla12/Credit-Card-Fraud-Detection', '_blank')">
+        <img src="./images/creditcard.jpg" alt="Credit Card Fraud Detection" />
+        <div class="project-info">
+          <h3>Credit Card Fraud Detection</h3>
+          <p>Performed EDA and built a web app using the trained model.</p>
+        </div>
+      </div>
     </div>
 
+    <!-- OpenCV Projects -->
+    <h2>🔹 OpenCV Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" role="button" tabindex="0" onclick="window.open('https://github.com/AdithyaChalla12/Mini_Project_RubixcubeSolver', '_blank')">
+        <img src="./images/rubixpng.png" alt="Rubik's Cube Solver using OpenCV" />
+        <div class="project-info">
+          <h3>Rubik's Cube Solver</h3>
+          <p>Python and OpenCV-based solver using Kociemba’s algorithm.</p>
+        </div>
+      </div>
+
+      <div class="project-card" role="button" tabindex="0" onclick="window.open('https://github.com/AdithyaChalla12/Waste-Classification', '_blank')">
+        <img src="./images/Wasteclassification.png" alt="Waste Classification with Transfer Learning" />
+        <div class="project-info">
+          <h3>Waste Classification</h3>
+          <p>Used ResNet & EfficientNet with OpenCV to classify 9 waste categories.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
