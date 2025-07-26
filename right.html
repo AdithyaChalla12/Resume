@@ -12,6 +12,7 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
+
         body {
             background-color: #f0f4f8;
             color: #333;
@@ -26,8 +27,8 @@
             margin-bottom: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: relative;
         }
+
         .navbar a, .dropbtn {
             color: #fff;
             text-decoration: none;
@@ -38,6 +39,7 @@
             background: none;
             cursor: pointer;
         }
+
         .navbar a:hover, .dropdown:hover .dropbtn {
             background-color: #8aa2c5; 
             color: #fff;
@@ -98,6 +100,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+
         .container img {
             width: 150px;
             height: 150px;
@@ -105,11 +108,13 @@
             object-fit: cover;
             border: 4px solid rgb(115, 147, 179); 
         }
+
         h1 {
             font-size: 32px;
             margin: 20px 0;
             color: rgb(115, 147, 179); 
         }
+
         p {
             font-size: 18px;
             margin: 10px 0;
@@ -123,24 +128,29 @@
             gap: 30px;
             flex-wrap: wrap;
         }
+
         .contact-item {
             text-align: center;
             color: #333;
             font-size: 16px;
             transition: transform 0.3s;
         }
+
         .contact-item i {
             font-size: 24px;
             margin-bottom: 10px;
             color: rgb(115, 147, 179); 
         }
+
         .contact-item:hover {
             transform: scale(1.1);
         }
+
         .contact-item a {
             text-decoration: none;
             color: rgb(115, 147, 179); 
         }
+
         .contact-item a:hover {
             color: #8aa2c5; 
         }
@@ -152,7 +162,6 @@
             color: #777;
         }
 
-        /* Blinking Cursor Effect */
         .cursor {
             display: inline-block;
             width: 8px;
@@ -164,7 +173,6 @@
         @keyframes blink {
             50% { opacity: 0; }
         }
-
     </style>
 </head>
 <body>
@@ -184,13 +192,11 @@
         <a href="./CS Venkata Adithya.pdf" class="resume-btn" target="_blank">Resume</a>
     </div>
 
-    <!-- Profile Section -->
     <div class="container">
         <img src="./images/My.jpg" alt="CS Venkata Adithya" class="photo">
         <h1>CS Venkata Adithya</h1>
         <p id="dynamicText"></p>
 
-        <!-- Contact Information -->
         <div class="contact-info">
             <div class="contact-item">
                 <i class="fa fa-envelope"></i>
@@ -209,13 +215,16 @@
                 <p><a href="https://www.kaggle.com/adithyachalla" target="_blank">Kaggle</a></p>
             </div>
             <div class="contact-item">
+                <i class="fa fa-bar-chart"></i>
+                <p><a href="https://public.tableau.com/app/profile/sai.venkata.adithya.challa/vizzes" target="_blank">Tableau Visualizations</a></p>
+            </div>
+            <div class="contact-item">
                 <i class="fa fa-phone"></i>
                 <p><a href="tel:+12134779905">+1 (213) 477-9905</a></p>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>© 2025 CS Venkata Adithya. All rights reserved.</p>
     </footer>
