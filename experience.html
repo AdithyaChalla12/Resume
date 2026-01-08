@@ -1,35 +1,95 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+        .Experience {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .experience-header {
+            display: flex;
+            align-items: center;
+            background-color: rgb(115, 147, 179);
+            color: white;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+        }
+        .experience-header i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        li {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        h3 {
+            font-size: 20px;
+            margin: 5px 0;
+            color: rgb(115, 147, 179);
+        }
+        i.fa-calendar {
+            font-size: 14px;
+            color: #666;
+        }
+        p {
+            margin: 10px 0;
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
 </head>
-<body>
-    <body oncontextmenu="return false;">
-        <link rel="stylesheet" href="style1.css">
-        <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
-        <div class="Experience">
-            <div class=" blue experience">
-                <i class="fa-solid fa-certificate"></i>
-                 <h2>Experience</h2>
-               </div>
-            <ul>
-                <li><h3>MAQ Software | Hyderabad, Telangana| Software Engineer</h3>
-                    <i class="fa-regular fa-calendar"> 08/2023 – 06/2024</i>
-                  <p>Developed analytical insights using Azure Tech Stack, including Azure SQL, Data Bricks, Data Lake, and Microsoft Power BI.
-                    Enhanced data management and visualization capabilities to support business decision-making.
-                    Collaborated with cross-functional teams to design and implement data solutions.
-                    </p>
-                </li>
-                <li><h3>Future Ready Talent Program</h3></li>
-                <i class="fa-regular fa-calendar"> 10/2021 - 01/2022</i>
-                <p> As a participant in this virtual program, I worked on various Microsoft Azure services and worked with 
-                    Azure cognitive services, analyzing facial attributes and attempting to perform facial recognition using Python.
-                    </p>
-                <li><h3>The Sparks Foundation|Data Science Intern </h3>
-                    <i class="fa-regular fa-calendar"> 07/2021 - 08/2021</i>
-                    <p>  As part of the internship, I learned how to perform exploratory data analysis on various datasets, find
-                        relationships between different attributes, visualize data, and draw conclusions using various graphs
-                        in Python.</p></li>
-            </ul>
+<body oncontextmenu="return false;">
+
+    <div class="Experience">
+        <div class="experience-header">
+            <i class="fa-solid fa-certificate"></i>
+            <h2>Experience</h2>
         </div>
+        <ul>
+            <li>
+                <h3>MAQ Software | Hyderabad, Telangana | Software Engineer</h3>
+                <i class="fa-regular fa-calendar"> 08/2023 – 06/2024</i>
+                <p>Developed analytical insights using Azure Tech Stack, including Azure SQL, Data Bricks, Data Lake, and Microsoft Power BI. Enhanced data management and visualization capabilities to support business decision-making. Collaborated with cross-functional teams to design and implement data solutions.</p>
+            </li>
+            <li>
+                <h3>Microsoft Future Ready Talent Program</h3>
+                <i class="fa-regular fa-calendar"> 10/2021 - 01/2022</i>
+                <p>As a participant in this virtual program, I worked on various Microsoft Azure services and explored Azure cognitive services, analyzing facial attributes and attempting to perform facial recognition using Python.</p>
+            </li>
+            <li>
+                <h3>The Sparks Foundation | Data Science Intern</h3>
+                <i class="fa-regular fa-calendar"> 07/2021 - 08/2021</i>
+                <p>As part of the internship, I learned how to perform exploratory data analysis on various datasets, find relationships between different attributes, visualize data, and draw conclusions using various graphs in Python.</p>
+            </li>
+        </ul>
+    </div>
+
 </body>
 </html>
