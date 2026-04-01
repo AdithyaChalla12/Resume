@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
-    <link rel="stylesheet" href="style1.css">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,82 +15,143 @@
             margin: 0;
             padding: 20px;
         }
+
         .Experience {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
+
         .experience-header {
             display: flex;
             align-items: center;
             background-color: rgb(115, 147, 179);
             color: white;
-            padding: 15px;
-            border-radius: 10px 10px 0 0;
+            padding: 20px;
         }
+
         .experience-header i {
             font-size: 24px;
             margin-right: 10px;
         }
+
         h2 {
             margin: 0;
-            font-size: 24px;
+            font-size: 26px;
         }
+
         ul {
             list-style-type: none;
-            padding: 0;
-            margin-top: 20px;
+            padding: 20px;
+            margin: 0;
         }
+
         li {
-            border-bottom: 1px solid #ddd;
-            padding: 15px 0;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 20px 0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
+
+        li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+
         li:last-child {
             border-bottom: none;
         }
+
         h3 {
             font-size: 20px;
             margin: 5px 0;
             color: rgb(115, 147, 179);
+            font-weight: 600;
         }
-        i.fa-calendar {
+
+        .date {
             font-size: 14px;
             color: #666;
         }
+
         p {
-            margin: 10px 0;
+            margin: 12px 0;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.7;
         }
+
+        .link {
+            display: inline-block;
+            margin-top: 8px;
+            color: rgb(115,147,179);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
+
 <body oncontextmenu="return false;">
 
     <div class="Experience">
+
         <div class="experience-header">
-            <i class="fa-solid fa-certificate"></i>
+            <i class="fa-solid fa-briefcase"></i>
             <h2>Experience</h2>
         </div>
+
         <ul>
+
+            <!-- Vosyn -->
             <li>
-                <h3>MAQ Software | Hyderabad, Telangana | Software Engineer</h3>
-                <i class="fa-regular fa-calendar"> 08/2023 – 06/2024</i>
-                <p>Developed analytical insights using Azure Tech Stack, including Azure SQL, Data Bricks, Data Lake, and Microsoft Power BI. Enhanced data management and visualization capabilities to support business decision-making. Collaborated with cross-functional teams to design and implement data solutions.</p>
+                <h3>Vosyn | ML Engineer Intern</h3>
+                <div class="date">
+                    <i class="fa-regular fa-calendar"></i> Feb 2026 – Present
+                </div>
+                <p>
+                    • Built scalable machine learning pipelines using Python & PyTorch for preprocessing, training, and inference.<br>
+                    • Automated training and evaluation workflows, improving reproducibility and reducing manual effort.<br>
+                    • Deployed ML services using CI/CD pipelines with GitHub Actions and containerized environments.
+                </p>
             </li>
+
+            <!-- Tableau -->
             <li>
-                <h3>Microsoft Future Ready Talent Program</h3>
-                <i class="fa-regular fa-calendar"> 10/2021 - 01/2022</i>
-                <p>As a participant in this virtual program, I worked on various Microsoft Azure services and explored Azure cognitive services, analyzing facial attributes and attempting to perform facial recognition using Python.</p>
+                <h3>Tableau | Student Ambassador</h3>
+                <div class="date">
+                    <i class="fa-regular fa-calendar"></i> Sep 2025 – Present
+                </div>
+                <p>
+                    • Explored AI-powered visualization and advanced data storytelling techniques.<br>
+                    • Designed interactive dashboards using agentic analytics concepts for better insights.
+                </p>
             </li>
+
+            <!-- MAQ Software -->
             <li>
-                <h3>The Sparks Foundation | Data Science Intern</h3>
-                <i class="fa-regular fa-calendar"> 07/2021 - 08/2021</i>
-                <p>As part of the internship, I learned how to perform exploratory data analysis on various datasets, find relationships between different attributes, visualize data, and draw conclusions using various graphs in Python.</p>
+                <h3>MAQ Software | Software Engineer</h3>
+                <div class="date">
+                    <i class="fa-regular fa-calendar"></i> Aug 2023 – Jun 2024
+                </div>
+                <p>
+                    • Built KPI-driven dashboards using Power BI & Tableau for incident analytics.<br>
+                    • Developed ETL workflows using Azure tools, Power Automate, and Outlook connectors.<br>
+                    • Queried large datasets using KQL in Azure Data Explorer for faster troubleshooting.<br>
+                    • Integrated Azure Application Insights to monitor system performance and user behavior.<br>
+                    • Developed React-based Power BI embedded dashboards for enhanced UX.
+                </p>
             </li>
+
         </ul>
+
     </div>
 
 </body>
