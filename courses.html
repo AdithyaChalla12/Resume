@@ -1,27 +1,78 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style1.css">
-    <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
-    <title>Certificates</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
+    <title>Certificates</title>
+
     <style>
+        /* Remove bullet points completely */
         .course-list {
-            /* This is the key line to remove the bullet points */
-            list-style-type: none;
-            /* Optional: Removes default left padding from the list */
-            padding-left: 0;
+            list-style: none !important;
+            padding-left: 0 !important;
+            margin: 0;
+        }
+
+        .course-list li {
+            list-style: none !important;
+            margin-bottom: 10px;
+            padding: 8px 10px;
+            border-radius: 6px;
+            transition: background 0.2s ease;
+        }
+
+        .course-list li:hover {
+            background: #e0ecff;
+        }
+
+        .course-list a {
+            text-decoration: none;
+            color: #1e293b;
+            font-size: 15px;
+        }
+
+        .course-list a:hover {
+            color: #4f7cac;
         }
     </style>
-    </head>
+</head>
+
 <body>
-    <div class="Certification">
-        <div class="blue certi">
-            <i class="fa-solid fa-certificate"></i>
-            <h2>Online Courses</h2></div><br>
-            <ul class="course-list"> 
-            <li><a href ="coursera1.html" target="right">Cloud Computing Foundations-Duke University</a></br></li>
-            <li><a href ="coursera2.html" target="right">Software Development Processes and Methodologies-University of Minnesota</a></br></li>
-            <li><a href ="coursera3.html" target="right">Tools for Data Science-IBM</a></br></li>
-            <li><a href ="coursera4.html" target="right">Database Management Essentials-University of Colorado System</a></br></li>
-            </ul>  
+
+    <div class="Certification">
+        <div class="blue certi">
+            <i class="fa-solid fa-certificate"></i>
+            <h2>Online Courses</h2>
+        </div>
+        <br>
+
+        <ul class="course-list"> 
+            <li>
+                <a href="coursera1.html" target="right">
+                    Cloud Computing Foundations - Duke University
+                </a>
+            </li>
+
+            <li>
+                <a href="coursera2.html" target="right">
+                    Software Development Processes and Methodologies - University of Minnesota
+                </a>
+            </li>
+
+            <li>
+                <a href="coursera3.html" target="right">
+                    Tools for Data Science - IBM
+                </a>
+            </li>
+
+            <li>
+                <a href="coursera4.html" target="right">
+                    Database Management Essentials - University of Colorado System
+                </a>
+            </li>
+        </ul>  
+
+    </div>
+
 </body>
 </html>
