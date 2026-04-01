@@ -5,37 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
 
-    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a1c21acd7b.js" crossorigin="anonymous"></script>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #e0ecff, #f8fafc);
             margin: 0;
-            padding: 20px;
+            padding: 30px;
         }
 
         .Experience {
-            max-width: 900px;
+            max-width: 950px;
             margin: auto;
-            background-color: #ffffff;
-            padding: 0;
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
         }
 
         .experience-header {
             display: flex;
             align-items: center;
-            background-color: rgb(115, 147, 179);
+            background: linear-gradient(135deg, #4f7cac, #6b9ac4);
             color: white;
             padding: 20px;
+            border-radius: 14px;
+            margin-bottom: 25px;
         }
 
         .experience-header i {
-            font-size: 24px;
+            font-size: 22px;
             margin-right: 10px;
         }
 
@@ -45,114 +41,145 @@
         }
 
         ul {
-            list-style-type: none;
-            padding: 20px;
+            list-style: none;
+            padding: 0;
             margin: 0;
         }
 
         li {
-            border-bottom: 1px solid #e5e7eb;
-            padding: 20px 0;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background: white;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-left: 5px solid #4f7cac;
         }
 
         li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-            border-radius: 8px;
-        }
-
-        li:last-child {
-            border-bottom: none;
+            transform: translateY(-6px);
+            box-shadow: 0 14px 30px rgba(0,0,0,0.12);
         }
 
         h3 {
+            margin: 0;
             font-size: 20px;
-            margin: 5px 0;
-            color: rgb(115, 147, 179);
-            font-weight: 600;
+            color: #1e293b;
         }
 
         .date {
             font-size: 14px;
-            color: #666;
+            color: #64748b;
+            margin: 6px 0 10px;
+        }
+
+        .tags {
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e0ecff;
+            color: #4f7cac;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 6px;
+            margin-bottom: 6px;
         }
 
         p {
-            margin: 12px 0;
-            color: #333;
+            margin: 0;
             line-height: 1.7;
+            color: #334155;
         }
 
-        .link {
-            display: inline-block;
-            margin-top: 8px;
-            color: rgb(115,147,179);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .link:hover {
-            text-decoration: underline;
+        p span {
+            display: block;
+            margin-bottom: 6px;
         }
 
     </style>
 </head>
 
-<body oncontextmenu="return false;">
+<body>
 
-    <div class="Experience">
+<div class="Experience">
 
-        <div class="experience-header">
-            <i class="fa-solid fa-briefcase"></i>
-            <h2>Experience</h2>
-        </div>
-
-        <ul>
-
-            <!-- Vosyn -->
-            <li>
-                <h3>Vosyn | ML Engineer Intern</h3>
-                <div class="date">
-                    <i class="fa-regular fa-calendar"></i> Feb 2026 – Present
-                </div>
-                <p>
-                    • Built scalable machine learning pipelines using Python & PyTorch for preprocessing, training, and inference.<br>
-                    • Automated training and evaluation workflows, improving reproducibility and reducing manual effort.<br>
-                    • Deployed ML services using CI/CD pipelines with GitHub Actions and containerized environments.
-                </p>
-            </li>
-
-            <!-- Tableau -->
-            <li>
-                <h3>Tableau | Student Ambassador</h3>
-                <div class="date">
-                    <i class="fa-regular fa-calendar"></i> Sep 2025 – Present
-                </div>
-                <p>
-                    • Explored AI-powered visualization and advanced data storytelling techniques.<br>
-                    • Designed interactive dashboards using agentic analytics concepts for better insights.
-                </p>
-            </li>
-
-            <!-- MAQ Software -->
-            <li>
-                <h3>MAQ Software | Software Engineer</h3>
-                <div class="date">
-                    <i class="fa-regular fa-calendar"></i> Aug 2023 – Jun 2024
-                </div>
-                <p>
-                    • Built KPI-driven dashboards using Power BI & Tableau for incident analytics.<br>
-                    • Developed ETL workflows using Azure tools, Power Automate, and Outlook connectors.<br>
-                    • Queried large datasets using KQL in Azure Data Explorer for faster troubleshooting.<br>
-                    • Integrated Azure Application Insights to monitor system performance and user behavior.<br>
-                    • Developed React-based Power BI embedded dashboards for enhanced UX.
-                </p>
-            </li>
-
-        </ul>
-
+    <div class="experience-header">
+        <i class="fa-solid fa-briefcase"></i>
+        <h2>Experience</h2>
     </div>
+
+    <ul>
+
+        <!-- Vosyn -->
+        <li>
+            <h3>Vosyn | ML Engineer Intern</h3>
+            <div class="date">
+                <i class="fa-regular fa-calendar"></i> Feb 2026 – Present
+            </div>
+
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">MLOps</span>
+                <span class="tag">CI/CD</span>
+            </div>
+
+            <p>
+                <span>✔ Built scalable ML pipelines for preprocessing, training, and inference</span>
+                <span>✔ Automated workflows improving reproducibility and reducing manual effort</span>
+                <span>✔ Deployed ML services using GitHub Actions and containerized environments</span>
+            </p>
+        </li>
+
+        <!-- Tableau -->
+        <li>
+            <h3>Tableau | Student Ambassador</h3>
+            <div class="date">
+                <i class="fa-regular fa-calendar"></i> Sep 2025 – Present
+            </div>
+
+            <div class="tags">
+                <span class="tag">Tableau</span>
+                <span class="tag">Data Viz</span>
+                <span class="tag">Analytics</span>
+            </div>
+
+            <p>
+                <span>✔ Explored AI-powered visualization and storytelling techniques</span>
+                <span>✔ Designed interactive dashboards for better insight discovery</span>
+            </p>
+        </li>
+
+        <!-- MAQ Software -->
+        <li>
+            <h3>MAQ Software | Software Engineer</h3>
+            <div class="date">
+                <i class="fa-regular fa-calendar"></i> Aug 2023 – Jun 2024
+            </div>
+
+            <div class="tags">
+                <span class="tag">Azure</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">ETL</span>
+                <span class="tag">KQL</span>
+                <span class="tag">React</span>
+            </div>
+
+            <p>
+                <span>✔ Built KPI dashboards for incident analytics using Power BI & Tableau</span>
+                <span>✔ Developed ETL pipelines using Azure tools and Power Automate</span>
+                <span>✔ Queried large datasets using KQL for faster troubleshooting</span>
+                <span>✔ Integrated Application Insights for monitoring performance</span>
+                <span>✔ Built React-based embedded dashboards for improved UX</span>
+            </p>
+        </li>
+
+    </ul>
+
+</div>
 
 </body>
 </html>
